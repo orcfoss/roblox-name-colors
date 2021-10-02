@@ -38,7 +38,7 @@ function mod(a, b) {
 /**
  * Converts a name color to a hexadecimal value.
  *
- * @param {array} Computed name color array with "red", "green", and "blue" keys.
+ * @param {array} color Computed name color array with "red", "green", and "blue" keys.
  *
  * @returns {string} Computed name color hex code.
  */
@@ -53,7 +53,7 @@ function hex(color) {
  * @param {boolean} [rgb=true] Whether to return the color represented as an array with "red", "green", and "blue" keys, or to return it as a hexadecimal color code.
  * @param {boolean} [useModernPalette=true] Whether to use the modern color palette.
  * 
- * @returns {array} Computed name color.
+ * @returns {string} Computed name color.
  */
 function compute(text, rgb = true, useModernPalette = true) {
     let palette = (useModernPalette ? modernPalette : oldPalette)
@@ -90,9 +90,19 @@ function compute(text, rgb = true, useModernPalette = true) {
 function describedBy(describer, rgb = true, useModernPalette = undefined) {
     describer = describer.toLowerCase()
     
-    let palette = (useModernPalette === undefined ? (describer.includes("old") ? oldPalette : modernPalette) : modernPalette)
+    let palette
+    if (useModernPalette === null) {
+        // Auto-determine
+        palette = describer.includes("old") ? oldPalette : modernPalette
+    } else if (useModernPalette === false) {
+        // Old palette
+        palette = oldPalette
+    } else {
+        // New palette
+        palette = modernPalette
+    }
+
     let found = false
-    
     for (let i = 0; i < palette.length; i++) {
         if (found) break
         

@@ -1,6 +1,6 @@
 {
   "name": "@orcfoss/roblox-name-colors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Computes Roblox name colors",
   "main": "roblox-name-colors.js",
   "scripts": {
