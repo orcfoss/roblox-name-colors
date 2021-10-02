@@ -4,7 +4,7 @@ Computes Roblox name colors
 ## Usage
 ### Installation
 ```bash
-npm install roblox-name-colors
+npm install @orcfoss/roblox-name-colors
 ```
 
 ### Documentation
