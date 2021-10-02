@@ -1,0 +1,25 @@
+{
+  "name": "@orcfoss/roblox-name-colors",
+  "version": "1.0.0",
+  "description": "Computes Roblox name colors",
+  "main": "roblox-name-colors.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orcfoss/roblox-name-colors.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/orcfoss"
+  },
+  "keywords": [
+    "roblox"
+  ],
+  "author": "orcfoss",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/orcfoss/roblox-name-colors/issues"
+  },
+  "homepage": "https://github.com/orcfoss/roblox-name-colors#readme"
+}
