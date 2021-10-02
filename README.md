@@ -20,5 +20,9 @@ robloxNameColors.describedBy("old red") // "{ red: 196, green: 40, blue: 28, des
 
 More detailed documentation is available on the [repository's GitHub wiki.](https://github.com/orcfoss/roblox-name-colors/wiki)
 
+
+## roblox-name-colors in Other Languages
+- [PHP](https://github.com/orcfoss/roblox-name-colors-php)
+
 ## License
 roblox-name-colors is licensed under the MIT license. A copy of the license [has been included](https://github.com/orcfoss/roblox-name-colors/blob/trunk/LICENSE) with roblox-name-colors.
